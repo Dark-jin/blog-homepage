@@ -5,10 +5,9 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 import Stack from "@mui/material/Stack";
-import Grid from "@mui/material/Grid";
-import { CardContent, TextField } from "@mui/material";
-import Card from "@mui/material/Card";
+import { TextField } from "@mui/material";
 import "/Users/choijinseo/Desktop/mainpage/src/App.css";
+import Blogcard from "./Blogcard";
 
 function Home() {
     return(
@@ -35,7 +34,7 @@ function Home() {
                     Welcome to blog, You could be the best blogger!
                 </div>
             </Stack>
-            <Stack direction="row" spacing={'5%'}>
+            <Stack direction="row" spacing={'5%'} justifyContent="space-between">
                     <Button color="inherit">TRENDING</Button>
                     <Button color="inherit">LATEST</Button>
                     <Button color="inherit">React</Button>
@@ -48,104 +47,11 @@ function Home() {
                         label=""
                         defaultValue=""
                         size="small"
-                        sx={{width:'110px'}}
+                        sx={{width:'120px'}}
                     />
             </Stack>
         </div>
-        <div className="grid">
-            <Grid container direction="row" justifyContent="space-around" alignItems="baseline" spacing={5}>
-                    <Grid item xs={12}>
-                        <Card sx={{borderRadius:'20px'}}>
-                            <CardContent>
-                                <Typography variant="h6" component="div">
-                                    Spring Codebase
-                                </Typography>
-                                <Typography variant="body2">
-                                    spring boot or spring cloud
-                                </Typography>
-                            </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={12}>
-                    <Stack direction="row" spacing={'3%'} justifyContent="space-between">
-                            <Card sx={{borderRadius:'20px'}}>
-                                <CardContent>
-                                    <Typography variant="h6" component="div">
-                                        Spring Codebase
-                                    </Typography>
-                                    <Typography variant="body2">
-                                        spring boot or spring cloud
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                            <Card sx={{borderRadius:'20px'}}>
-                                <CardContent>
-                                    <Typography variant="h6" component="div">
-                                        Spring Codebase
-                                    </Typography>
-                                    <Typography variant="body2">
-                                        spring boot or spring cloud
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                            <Card sx={{borderRadius:'20px'}}>
-                                <CardContent>
-                                    <Typography variant="h6" component="div">
-                                        Spring Codebase
-                                    </Typography>
-                                    <Typography variant="body2">
-                                        spring boot or spring cloud
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                            <Card sx={{borderRadius:'20px'}}>
-                                <CardContent>
-                                    <Typography variant="h6" component="div">
-                                        Spring Codebase
-                                    </Typography>
-                                    <Typography variant="body2">
-                                        spring boot or spring cloud
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                        </Stack>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Stack direction="row" spacing={'3%'} justifyContent="space-between">
-                            <Card sx={{borderRadius:'20px'}}>
-                                <CardContent>
-                                    <Typography variant="h6" component="div">
-                                        Spring Codebase
-                                    </Typography>
-                                    <Typography variant="body2">
-                                        spring boot or spring cloud
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                            <Card sx={{borderRadius:'20px'}}>
-                                <CardContent>
-                                    <Typography variant="h6" component="div">
-                                        Spring Codebase
-                                    </Typography>
-                                    <Typography variant="body2">
-                                        spring boot or spring cloud
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                            <Card sx={{borderRadius:'20px'}}>
-                                <CardContent>
-                                    <Typography variant="h6" component="div">
-                                        Spring Codebase
-                                    </Typography>
-                                    <Typography variant="body2">
-                                        spring boot or spring cloud
-                                    </Typography>
-                                </CardContent>
-                            </Card>
-                        </Stack>
-                    </Grid>
-            </Grid>
-        </div>
+        <Blogcard/>
         </>
     )
 }
