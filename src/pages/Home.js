@@ -38,7 +38,7 @@ function Home() {
         <div className="grid">
             <Stack direction="cols" spacing={"5%"}>
                 <div className="title">
-                    <h3>MEGABRAIN BLOG</h3>
+                    <h2>MEGABRAIN BLOG</h2>
                     Welcome to blog, You could be the best blogger!
                 </div>
             </Stack>
@@ -59,7 +59,7 @@ function Home() {
                     />
             </Stack>
         </div>
-        <Blogcard tnumber={number}/>
+        <Blogcard cardnumber={number}/>
         </>
     )
 }

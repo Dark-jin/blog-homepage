@@ -15,10 +15,10 @@ function Blogcard(props) {
                         <Card sx={{borderRadius:'20px'}}>
                             <CardContent>
                                 <Typography variant="h6" component="div">
-                                    {data.carddata[props.tnumber].title}
+                                    {data.carddata[props.cardnumber].title}
                                 </Typography>
                                 <Typography variant="body2">
-                                    {data.carddata[props.tnumber].location}
+                                    {data.carddata[props.cardnumber].location}
                                 </Typography>
                             </CardContent>
                         </Card>
@@ -28,40 +28,40 @@ function Blogcard(props) {
                             <Card sx={{borderRadius:'20px',width:"30%",height:"30%"}}>
                                 <CardContent>
                                     <Typography variant="h6" component="div">
-                                        {data.carddata[props.tnumber+1].title}
+                                        {data.carddata[props.cardnumber+1].title}
                                     </Typography>
                                     <Typography variant="body2">
-                                        {data.carddata[props.tnumber+1].location}
+                                        {data.carddata[props.cardnumber+1].location}
                                     </Typography>
                                 </CardContent>
                             </Card>
                             <Card sx={{borderRadius:'20px',width:"30%",height:"30%"}}>
                                 <CardContent>
                                     <Typography variant="h6" component="div">
-                                        {data.carddata[props.tnumber+2].title}
+                                        {data.carddata[props.cardnumber+2].title}
                                     </Typography>
                                     <Typography variant="body2">
-                                        {data.carddata[props.tnumber+2].location}
+                                        {data.carddata[props.cardnumber+2].location}
                                     </Typography>
                                 </CardContent>
                             </Card>
                             <Card sx={{borderRadius:'20px',width:"30%",height:"30%"}}>
                                 <CardContent>
                                     <Typography variant="h6" component="div">
-                                        {data.carddata[props.tnumber+3].title}
+                                        {data.carddata[props.cardnumber+3].title}
                                     </Typography>
                                     <Typography variant="body2">
-                                        {data.carddata[props.tnumber+3].location}
+                                        {data.carddata[props.cardnumber+3].location}
                                     </Typography>
                                 </CardContent>
                             </Card>
                             <Card sx={{borderRadius:'20px',width:"30%",height:"30%"}}>
                                 <CardContent>
                                     <Typography variant="h6" component="div">
-                                        {data.carddata[props.tnumber+4].title}
+                                        {data.carddata[props.cardnumber+4].title}
                                     </Typography>
                                     <Typography variant="body2">
-                                        {data.carddata[props.tnumber+4].location}
+                                        {data.carddata[props.cardnumber+4].location}
                                     </Typography>
                                 </CardContent>
                             </Card>
@@ -72,20 +72,20 @@ function Blogcard(props) {
                             <Card sx={{borderRadius:'20px',width:"50%",height:"30%"}}>
                                 <CardContent>
                                     <Typography variant="h6" component="div">
-                                        {data.carddata[props.tnumber+5].title}
+                                        {data.carddata[props.cardnumber+5].title}
                                     </Typography>
                                     <Typography variant="body2">
-                                        {data.carddata[props.tnumber+5].location}
+                                        {data.carddata[props.cardnumber+5].location}
                                     </Typography>
                                 </CardContent>
                             </Card>
                             <Card sx={{borderRadius:'20px',width:"50%",height:"30%"}}>
                                 <CardContent>
                                     <Typography variant="h6" component="div">
-                                        {data.carddata[props.tnumber+6].title}
+                                        {data.carddata[props.cardnumber+6].title}
                                     </Typography>
                                     <Typography variant="body2">
-                                        {data.carddata[props.tnumber+6].location}
+                                        {data.carddata[props.cardnumber+6].location}
                                     </Typography>
                                 </CardContent>
                             </Card>
