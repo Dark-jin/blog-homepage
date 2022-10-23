@@ -8,8 +8,16 @@ import Stack from "@mui/material/Stack";
 import { TextField } from "@mui/material";
 import "/Users/choijinseo/Desktop/mainpage/src/App.css";
 import Blogcard from "./Blogcard";
+import { useState } from "react";
 
 function Home() {
+    const [number,setnumber] = useState(0);
+    const trendcard=() => {
+        setnumber(0);
+    }
+    const latestcard=() => {
+        setnumber(7);
+    }
     return(
         <>
         <div>
@@ -35,8 +43,8 @@ function Home() {
                 </div>
             </Stack>
             <Stack direction="row" spacing={'5%'} justifyContent="space-between">
-                    <Button color="inherit">TRENDING</Button>
-                    <Button color="inherit">LATEST</Button>
+                    <Button color="inherit" onClick={trendcard}>TRENDING</Button>
+                    <Button color="inherit" onClick={latestcard}>LATEST</Button>
                     <Button color="inherit">React</Button>
                     <Button color="inherit">Spring</Button>
                     <Button color="inherit">Kurbernetes</Button>
@@ -51,7 +59,7 @@ function Home() {
                     />
             </Stack>
         </div>
-        <Blogcard/>
+        <Blogcard tnumber={number}/>
         </>
     )
 }
