@@ -9,6 +9,7 @@ import { TextField } from "@mui/material";
 import "/Users/choijinseo/Desktop/mainpage/src/App.css";
 import Blogcard from "./Blogcard";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
     const [number,setnumber] = useState(0);
@@ -18,13 +19,17 @@ function Home() {
     const latestcard=() => {
         setnumber(7);
     }
+    const navigate = useNavigate();
+    const homeclick=()=>{
+        navigate("/");
+    }
     return(
         <>
         <div>
             <Box sx={{flexGrow:1}}>
                 <AppBar color="inherit" position="static" sx={{boxShadow:"none"}}>
                     <Toolbar>
-                        <Typography variant="h4" component="div" sx={{flexGrow:1}}>
+                        <Typography variant="h4" component="div" sx={{flexGrow:1}} onClick={homeclick}>
                             AllWrite
                         </Typography>
                         <Stack direction="row" spacing={3}>

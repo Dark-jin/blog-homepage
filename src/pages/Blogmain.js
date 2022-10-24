@@ -9,6 +9,8 @@ import Box from '@mui/material/Box';
 import Button from "@mui/material/Button";
 import profileimg from "../image/monkey.png";
 import { useNavigate } from "react-router-dom";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
 
 function Blogmain() {
     const navigate = useNavigate();
@@ -18,6 +20,19 @@ function Blogmain() {
 
     return(
         <>
+            <Box sx={{flexGrow:1}}>
+                <AppBar color="inherit" position="static" sx={{boxShadow:"none"}}>
+                    <Toolbar>
+                        <Typography variant="h4" component="div" sx={{flexGrow:1}} onClick={homeclick}>
+                            AllWrite
+                        </Typography>
+                        <Stack direction="row" spacing={3}>
+                            <Button color="inherit">Sign in</Button>
+                            <Button variant="contained" size="small" sx={{borderRadius:'20px',fontSize:10,m:1,p:1}}>Get started</Button>
+                        </Stack>
+                    </Toolbar>
+                </AppBar>
+            </Box>
             <div className="blogname">
                 <h1>Jinseo Blog</h1>
             </div>
