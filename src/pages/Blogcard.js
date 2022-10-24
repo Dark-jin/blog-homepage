@@ -17,7 +17,6 @@ function Blogcard(props) {
             navigate("/Blogmain");
         }
     }
-
     return(
         <div className="grid">
             <Grid container direction="row" justifyContent="space-around" alignItems="baseline" spacing={5}>
