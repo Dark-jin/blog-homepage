@@ -31,9 +31,31 @@
   margin-left: 10%;
   margin-right: 10%;
 }
+.grid1 {
+  margin-top: 5%;
+  margin-left: 8%;
+  margin-right: 10%;
+}
 .title {
   margin-bottom: 5%;
 }
+.blogname {
+  text-align: center;
+}
+.boxbutton {
+  margin-top: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+  vertical-align: middle;
+  text-align: center;
+}
+.profile {
+  border-radius: 100%;
+  width: 90%;
+  height: 100%;
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

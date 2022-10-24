@@ -6,13 +6,20 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import "/Users/choijinseo/Desktop/mainpage/src/App.css";
 import data from "../data.json";
+import { useNavigate } from "react-router-dom";
 
 function Blogcard(props) {
+    const navigate = useNavigate();
+
+    const onClikblogmain=() => {
+        navigate("/Blogmain");
+    }
+
     return(
         <div className="grid">
             <Grid container direction="row" justifyContent="space-around" alignItems="baseline" spacing={5}>
                     <Grid item xs={12}>
-                        <Card sx={{borderRadius:'20px'}}>
+                        <Card sx={{borderRadius:'20px'}} onClick={onClikblogmain}>
                             <CardContent>
                                 <Typography variant="h6" component="div">
                                     {data.carddata[props.cardnumber].title}
